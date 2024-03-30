@@ -33,5 +33,12 @@ return require('packer').startup(function(use)
 		  {'l3mon4d3/luasnip'},
 	  }
   }
+
+  use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+          'nvim-tree/nvim-web-devicons', -- optional
+      },
+  }
 end)
 
