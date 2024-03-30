@@ -40,5 +40,11 @@ return require('packer').startup(function(use)
           'nvim-tree/nvim-web-devicons', -- optional
       },
   }
+
+  use { 'bluz71/vim-moonfly-colors', as = 'moonfly',
+    config = function()
+      vim.cmd('colorscheme moonfly')
+    end
+  }
 end)
 
